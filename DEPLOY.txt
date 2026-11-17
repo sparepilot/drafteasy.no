@@ -1,0 +1,25 @@
+drafteasy.no on GitHub Pages
+============================
+
+1. github.com: create a free account and a PUBLIC repository named drafteasy.no
+   (Add file -> Upload files: drop everything in this folder, including CNAME, then Commit).
+2. Repository -> Settings -> Pages: Source = Deploy from a branch, Branch = main, folder = / (root), Save.
+   Custom domain: drafteasy.no, Save. When the DNS check is green, tick "Enforce HTTPS".
+3. Domeneshop -> Domener -> drafteasy.no -> DNS: delete the existing A/AAAA/CNAME records for @ and www
+   (and turn off "Videresending"/forwarding if it is on), then add:
+     @    A      185.199.108.153
+     @    A      185.199.109.153
+     @    A      185.199.110.153
+     @    A      185.199.111.153
+     @    AAAA   2606:50c0:8000::153
+     @    AAAA   2606:50c0:8001::153
+     @    AAAA   2606:50c0:8002::153
+     @    AAAA   2606:50c0:8003::153
+     www  CNAME  sparepilot.github.io.
+   DNS changes take from minutes up to a few hours.
+4. Installer: repository -> Releases -> Draft a new release, tag v1.27, attach DraftEasy_Setup_1.27.exe.
+   Put its link (right-click the file -> copy link) in DOWNLOAD_URL near the bottom of index.html.
+5. Stripe Payment Link (https://buy.stripe.com/...): put it in STRIPE_URL in index.html.
+   Tally form id: put it in TALLY_FORM_ID in feedback/index.html.
+6. New program version: python installer/make_site_changelog.py, update VERSION and DOWNLOAD_URL
+   in index.html, upload the changed files.

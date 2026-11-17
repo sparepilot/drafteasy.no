@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DraftEasy · free DWG and DXF editor for Windows</title>
+<meta name="description" content="DraftEasy is a free, simple DWG and DXF editor for Windows. Open, edit and save AutoCAD drawings with AutoCAD-style commands. No subscription, no trial, no watermark.">
+<link rel="icon" type="image/png" href="img/icon-64.png">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav class="crumbs"><a class="brand" href="#top"><img src="img/icon.svg" alt="" width="40" height="40">DraftEasy</a></nav>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="no" aria-pressed="false">NO</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <section class="hero">
+    <img class="heroicon" src="img/icon.svg" width="72" height="72" alt="">
+    <h1 data-i18n="h1">Edit DWG drawings for free.</h1>
+    <p class="lead" data-i18n="lead">DraftEasy opens, edits and saves AutoCAD DWG and DXF files on Windows. No subscription, no trial period, no watermark.</p>
+    <div class="cta">
+      <a class="btn primary" id="download" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>
+        <span data-i18n="download">Download for Windows</span>
+      </a>
+      <a class="btn" href="#support" data-i18n="coffee-btn">Buy me a coffee</a>
+      <small><span data-i18n="version">Version</span> <span class="ver"></span> · Windows 10 / 11, 64-bit</small>
+    </div>
+    <ul class="facts">
+      <li data-i18n="f1">DWG and DXF</li>
+      <li data-i18n="f2">AutoCAD commands</li>
+      <li data-i18n="f3">English · Norsk</li>
+      <li data-i18n="f4">No account, no tracking</li>
+    </ul>
+    <figure class="frame">
+      <img src="img/shot-model.webp" width="1600" height="940" alt="DraftEasy with a plumbing plan: a selected pipe shows its blue grips, dimensions along the walls, the Layers panel on the right." data-i18n-alt="alt-model">
+    </figure>
+  </section>
+
+  <div class="dim" aria-hidden="true"><span data-i18n="d-commands">commands</span></div>
+  <section id="commands">
+    <h2 data-i18n="cmd-h">Type it the way you type it in AutoCAD</h2>
+    <p class="intro" data-i18n="cmd-p">The command line takes the usual aliases, coordinates (x,y · @dx,dy · length&lt;angle) and Enter to repeat. Snap, ortho (F8) and Shift for straight lines work as you expect.</p>
+    <div class="cmds">
+      <div class="cmd"><b>L</b><span data-i18n="c-l">Line</span></div>
+      <div class="cmd"><b>PL</b><span data-i18n="c-pl">Polyline</span></div>
+      <div class="cmd"><b>C</b><span data-i18n="c-c">Circle</span></div>
+      <div class="cmd"><b>REC</b><span data-i18n="c-rec">Rectangle</span></div>
+      <div class="cmd"><b>T</b><span data-i18n="c-t">Text</span></div>
+      <div class="cmd"><b>M</b><span data-i18n="c-m">Move</span></div>
+      <div class="cmd"><b>CO</b><span data-i18n="c-co">Copy</span></div>
+      <div class="cmd"><b>RO</b><span data-i18n="c-ro">Rotate</span></div>
+      <div class="cmd"><b>SC</b><span data-i18n="c-sc">Scale</span></div>
+      <div class="cmd"><b>MI</b><span data-i18n="c-mi">Mirror</span></div>
+      <div class="cmd"><b>O</b><span data-i18n="c-o">Offset</span></div>
+      <div class="cmd"><b>TR</b><span data-i18n="c-tr">Trim</span></div>
+      <div class="cmd"><b>EX</b><span data-i18n="c-ex">Extend</span></div>
+      <div class="cmd"><b>F</b><span data-i18n="c-f">Fillet</span></div>
+      <div class="cmd"><b>X</b><span data-i18n="c-x">Explode</span></div>
+      <div class="cmd"><b>MA</b><span data-i18n="c-ma">Match properties</span></div>
+      <div class="cmd"><b>DLI</b><span data-i18n="c-dli">Linear dimension</span></div>
+      <div class="cmd"><b>DAL</b><span data-i18n="c-dal">Aligned dimension</span></div>
+      <div class="cmd"><b>DDI</b><span data-i18n="c-ddi">Diameter</span></div>
+      <div class="cmd"><b>DI</b><span data-i18n="c-di">Distance</span></div>
+      <div class="cmd"><b>AA</b><span data-i18n="c-aa">Area</span></div>
+      <div class="cmd"><b>MV</b><span data-i18n="c-mv">Viewport</span></div>
+      <div class="cmd"><b>IAT</b><span data-i18n="c-iat">PDF underlay</span></div>
+      <div class="cmd"><b>E</b><span data-i18n="c-e">Erase</span></div>
+    </div>
+  </section>
+
+  <div class="dim" aria-hidden="true"><span data-i18n="d-features">features</span></div>
+  <section id="features">
+    <h2 data-i18n="feat-h">What it does</h2>
+    <p class="intro" data-i18n="feat-p">Made for the quick fix: a title block, a pipe moved, a dimension added, a sheet printed to PDF. When you need the full AutoCAD, you still have it.</p>
+    <div class="features">
+      <div class="feature"><h3 data-i18n="ft1-h">Real DWG files</h3><p data-i18n="ft1-p">Opens and saves DWG in the version it came in, through the free ODA File Converter. The installer sets it up for you.</p></div>
+      <div class="feature"><h3 data-i18n="ft2-h">Grips and snaps</h3><p data-i18n="ft2-p">Blue grips to stretch lines, polylines, arcs and viewports. Endpoint, midpoint, centre, quadrant and intersection snaps.</p></div>
+      <div class="feature"><h3 data-i18n="ft3-h">Layers and xrefs</h3><p data-i18n="ft3-p">Turn layers on and off, lock them, change colours. Attach, reload and bind external references.</p></div>
+      <div class="feature"><h3 data-i18n="ft4-h">Model and sheets</h3><p data-i18n="ft4-p">Layout tabs with A0–A4 sheets, viewports at a set scale, and export to PDF ready for printing.</p></div>
+      <div class="feature"><h3 data-i18n="ft5-h">Draw over a PDF</h3><p data-i18n="ft5-p">Drop a PDF or a scan onto the window, scale it to size, lock it and trace over it.</p></div>
+      <div class="feature"><h3 data-i18n="ft6-h">Small and quick</h3><p data-i18n="ft6-p">Starts in seconds, needs no licence server and no internet connection once installed.</p></div>
+    </div>
+  </section>
+
+  <div class="dim" aria-hidden="true"><span data-i18n="d-screens">screens</span></div>
+  <section id="screens">
+    <h2 data-i18n="scr-h">See it working</h2>
+    <p class="intro" data-i18n="scr-p">Real screenshots of DraftEasy on a demo drawing.</p>
+    <div class="gallery">
+      <figure><div class="frame"><img src="img/shot-trim.webp" width="1600" height="940" loading="lazy" alt="The Trim command shows in red the part of a pipe that will be cut away." data-i18n-alt="alt-trim"></div><figcaption data-i18n="cap-trim">Trim shows in red what will be cut before you click.</figcaption></figure>
+      <figure><div class="frame"><img src="img/shot-sheet.webp" width="1600" height="940" loading="lazy" alt="An A3 sheet with a viewport at 1:50 and a title block." data-i18n-alt="alt-sheet"></div><figcaption data-i18n="cap-sheet">An A3 sheet with a viewport at 1:50, ready for PDF.</figcaption></figure>
+      <figure><div class="frame"><img src="img/shot-underlay.webp" width="1600" height="940" loading="lazy" alt="A PDF plan as a faded underlay on a locked layer, with a new pipe drawn over it." data-i18n-alt="alt-underlay"></div><figcaption data-i18n="cap-underlay">A PDF plan as a locked underlay, with a new pipe drawn on top.</figcaption></figure>
+    </div>
+  </section>
+
+  <div class="dim" aria-hidden="true"><span data-i18n="d-news">what's new</span></div>
+  <section id="news">
+    <h2 data-i18n="news-h">What's new</h2>
+    <p class="intro" data-i18n="news-p">What each version added, and what was asked for but could not be done yet.</p>
+    <div class="changelog" id="changelog"></div>
+    <div class="feedback-cta">
+      <p data-i18n="fb-p">Missing a command, or something does not work? Tell me. The best wishes go into the next version.</p>
+      <a class="btn" id="feedback-link" href="feedback/" data-i18n="fb-btn">Suggest an improvement</a>
+    </div>
+  </section>
+
+  <div class="dim" aria-hidden="true"><span data-i18n="d-faq">questions</span></div>
+  <section id="faq">
+    <h2 data-i18n="faq-h">Questions</h2>
+    <div class="faq">
+      <details><summary data-i18n="q1">Is it really free?</summary><p data-i18n="a1">Yes, for private and commercial work. There is no paid version. If it saves you time, you can buy me a coffee.</p></details>
+      <details><summary data-i18n="q2">Do I need AutoCAD?</summary><p data-i18n="a2">No. DraftEasy works on its own. For DWG files it uses ODA File Converter, a free program from the Open Design Alliance; the installer offers to install it. ODA File Converter has its own licence terms, set by Open Design Alliance; check them if you use DWG files at work. DXF files need no converter.</p></details>
+      <details><summary data-i18n="q3">Will my drawing still open in AutoCAD?</summary><p data-i18n="a3">Yes. DraftEasy saves standard DWG and DXF in the version the file had, and keeps a .bak copy when it saves over a file. Keep backups of important drawings, as with any program.</p></details>
+      <details><summary data-i18n="q4">What can it not do?</summary><p data-i18n="a4">It is a 2D editor: no 3D, no dynamic blocks or sheet sets. Hatching works inside closed polylines, rectangles and circles. See below what is new and what is not done yet.</p></details>
+      <details><summary data-i18n="q5">Does it send anything over the internet?</summary><p data-i18n="a5">No. There is no account, no tracking and no automatic updates. The only internet use is installing ODA File Converter, and only if you choose it.</p></details>
+    </div>
+  </section>
+
+  <div class="dim" aria-hidden="true"><span data-i18n="d-support">support</span></div>
+  <section id="support">
+    <div class="support-head">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 17h22l-2 14q-.5 3-4 3H13q-3.5 0-4-3Z" fill="#f4e3c8" stroke="#8b5a2b" stroke-width="1.2"/><rect x="7.6" y="17" width="20.8" height="3.2" fill="#8b5a2b"/><path d="M29 20.5a5 5 0 0 1 0 9" fill="none" stroke="#8b5a2b" stroke-width="3"/><path d="M4 37h28" stroke="#8b5a2b" stroke-width="3"/><path d="M13 14c-3-3 3-6 0-10M19 14c-3-3 3-6 0-10M25 14c-3-3 3-6 0-10" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <h2 data-i18n="sup-h">Keep me awake</h2>
+    </div>
+    <p class="intro" data-i18n="sup-p">DraftEasy is made in the evenings, mostly on coffee. Any amount is welcome, and thank you!</p>
+    <div class="pay">
+      <div class="card" id="card-stripe" hidden>
+        <span class="cur">CARD · APPLE PAY · GOOGLE PAY</span>
+        <svg class="qr" viewBox="0 0 168 168" width="168" height="168" aria-hidden="true"><rect x="24" y="44" width="120" height="80" rx="10" fill="none" stroke="currentColor" stroke-width="5"/><rect x="24" y="62" width="120" height="14" fill="currentColor"/><rect x="38" y="96" width="34" height="8" rx="3" fill="currentColor"/></svg>
+        <dl><dt data-i18n="to">To</dt><dd>Ilya Ershov</dd></dl>
+        <a class="pay-link" id="stripe-link" href="#" data-i18n="pay-card">Pay by card</a>
+      </div>
+      <div class="card">
+        <span class="cur">NOK · VIPPS</span>
+        <img class="qr" src="img/qr-vipps.svg" width="168" height="168" alt="QR code for Vipps" data-i18n-alt="alt-qr-vipps">
+        <dl><dt data-i18n="to">To</dt><dd>Ilya Ershov</dd><dt data-i18n="phone">Phone</dt><dd>+47 99 59 77 31</dd></dl>
+        <a class="pay-link" href="https://qr.vipps.no/28/2/01/031/4799597731?v=1" data-i18n="open-vipps">Open in Vipps</a>
+      </div>
+      <div class="card">
+        <span class="cur">USD · EUR · REVOLUT</span>
+        <img class="qr" src="img/qr-revolut.svg" width="168" height="168" alt="QR code for Revolut" data-i18n-alt="alt-qr-revolut">
+        <dl><dt data-i18n="to">To</dt><dd>@ilya8akc</dd></dl>
+        <a class="pay-link" href="https://revolut.me/ilya8akc">revolut.me/ilya8akc</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div class="titleblock">
+    <div><small data-i18n="tb-project">Project</small><strong>DraftEasy</strong></div>
+    <div><small data-i18n="tb-version">Version</small><strong class="ver"></strong></div>
+    <div><small data-i18n="tb-scale">Scale</small><strong>1:1</strong></div>
+    <div><small data-i18n="tb-drawn">Drawn by</small><strong>Ilya Ershov</strong></div>
+  </div>
+  <p class="legal" data-i18n="legal">© 2026 Ilya Ershov. DraftEasy is freeware and is not affiliated with or endorsed by Autodesk, Inc. AutoCAD and DWG are trademarks of Autodesk. DWG files are converted with ODA File Converter from the Open Design Alliance.</p>
+  <p class="legal"><a href="terms/" data-i18n="terms-link">Terms, refunds and privacy</a> · <a href="feedback/" data-i18n="fb-btn">Suggest an improvement</a></p>
+</footer>
+
+<script src="changelog.js"></script>
+<script>
+// ---- settings: change these when a new version is published ----------------
+const VERSION = "1.27";
+const DOWNLOAD_URL = "https://github.com/sparepilot/drafteasy.no/releases/download/v1.27/DraftEasy_Setup_1.27.exe";   // GitHub release: tag v1.27 with this file attached
+// Stripe Payment Link (https://buy.stripe.com/...). While empty, the card payment box is hidden.
+const STRIPE_URL = "";
+
+const T = {
+  no: {
+    "h1": "Rediger DWG-tegninger gratis.",
+    "lead": "DraftEasy åpner, redigerer og lagrer AutoCAD DWG- og DXF-filer i Windows. Ingen abonnement, ingen prøveperiode, ingen vannmerke.",
+    "download": "Last ned for Windows", "coffee-btn": "Spander en kaffe", "version": "Versjon",
+    "f1": "DWG og DXF", "f2": "AutoCAD-kommandoer", "f4": "Ingen konto, ingen sporing",
+    "alt-model": "DraftEasy med en VVS-plan: et valgt rør viser blå grep, mål langs veggene, Lag-panelet til høyre.",
+    "d-commands": "kommandoer", "cmd-h": "Skriv som du gjør i AutoCAD",
+    "cmd-p": "Kommandolinjen tar de vanlige forkortelsene, koordinater (x,y · @dx,dy · lengde<vinkel) og Enter for å gjenta. Snap, ortho (F8) og Shift for rette linjer virker som du venter.",
+    "c-l": "Linje", "c-pl": "Polylinje", "c-c": "Sirkel", "c-rec": "Rektangel", "c-t": "Tekst", "c-m": "Flytt", "c-co": "Kopier",
+    "c-ro": "Roter", "c-sc": "Skaler", "c-mi": "Speil", "c-o": "Forskyv", "c-tr": "Trim", "c-ex": "Forleng", "c-f": "Avrund",
+    "c-x": "Spreng", "c-ma": "Kopier egenskaper", "c-dli": "Lineært mål", "c-dal": "Justert mål", "c-ddi": "Diameter",
+    "c-di": "Avstand", "c-aa": "Areal", "c-mv": "Visningsvindu", "c-iat": "PDF-underlag", "c-e": "Slett",
+    "d-features": "funksjoner", "feat-h": "Hva den gjør",
+    "feat-p": "Laget for de raske endringene: et tittelfelt, et rør som flyttes, et mål som legges til, et ark skrevet ut til PDF. Trenger du hele AutoCAD, har du det fortsatt.",
+    "ft1-h": "Ekte DWG-filer", "ft1-p": "Åpner og lagrer DWG i versjonen filen hadde, med det gratis programmet ODA File Converter. Installasjonen setter det opp for deg.",
+    "ft2-h": "Grep og snap", "ft2-p": "Blå grep for å strekke linjer, polylinjer, buer og visningsvinduer. Snap til endepunkt, midtpunkt, senter, kvadrant og skjæring.",
+    "ft3-h": "Lag og xref", "ft3-p": "Slå lag av og på, lås dem, endre farger. Legg til, last inn på nytt og bind eksterne referanser.",
+    "ft4-h": "Modell og ark", "ft4-p": "Layout-faner med A0–A4-ark, visningsvinduer i fast målestokk og eksport til PDF klar for utskrift.",
+    "ft5-h": "Tegn over en PDF", "ft5-p": "Dra en PDF eller et skann inn i vinduet, skaler det til riktig størrelse, lås det og tegn over.",
+    "ft6-h": "Liten og rask", "ft6-p": "Starter på sekunder, trenger ingen lisensserver og ingen internettforbindelse når den er installert.",
+    "d-screens": "skjermbilder", "scr-h": "Slik ser det ut", "scr-p": "Ekte skjermbilder av DraftEasy med en demotegning.",
+    "cap-trim": "Trim viser i rødt hva som kuttes før du klikker.", "cap-sheet": "Et A3-ark med visningsvindu i 1:50, klart for PDF.",
+    "cap-underlay": "En PDF-plan som låst underlag, med et nytt rør tegnet over.",
+    "alt-trim": "Trim-kommandoen viser i rødt delen av et rør som kuttes bort.", "alt-sheet": "Et A3-ark med visningsvindu i 1:50 og tittelfelt.",
+    "alt-underlay": "En PDF-plan som tonet underlag på et låst lag, med et nytt rør tegnet over.",
+    "pay-card": "Betal med kort", "terms-link": "Vilkår, refusjon og personvern", "d-news": "nytt", "news-h": "Nytt i DraftEasy", "news-p": "Hva hver versjon har fått, og hva som er ønsket, men ikke er gjort ennå.",
+    "fb-p": "Savner du en kommando, eller virker noe ikke? Si fra. De beste ønskene kommer med i neste versjon.", "fb-btn": "Foreslå en forbedring",
+    "added": "Lagt til", "notyet": "Ikke lagt til ennå",
+    "d-faq": "spørsmål", "faq-h": "Spørsmål",
+    "q1": "Er det virkelig gratis?", "a1": "Ja, både privat og i jobb. Det finnes ingen betalt versjon. Sparer den deg tid, kan du spandere en kaffe.",
+    "q2": "Trenger jeg AutoCAD?", "a2": "Nei. DraftEasy fungerer på egen hånd. For DWG-filer bruker den ODA File Converter, et gratis program fra Open Design Alliance; installasjonen tilbyr å installere det. ODA File Converter har egne lisensvilkår fra Open Design Alliance; sjekk dem hvis du bruker DWG-filer i jobben. DXF-filer trenger ingen konverterer.",
+    "q3": "Åpnes tegningen fortsatt i AutoCAD?", "a3": "Ja. DraftEasy lagrer vanlig DWG og DXF i versjonen filen hadde, og tar en .bak-kopi når den lagrer over en fil. Ta sikkerhetskopier av viktige tegninger, som med alle programmer.",
+    "q4": "Hva kan den ikke?", "a4": "Det er en 2D-editor: ikke 3D, ikke dynamiske blokker eller arksett. Skravur virker inne i lukkede polylinjer, rektangler og sirkler. Se nedenfor hva som er nytt og hva som ikke er gjort ennå.",
+    "q5": "Sender den noe over internett?", "a5": "Nei. Ingen konto, ingen sporing og ingen automatiske oppdateringer. Internett brukes bare til å installere ODA File Converter, og bare hvis du velger det.",
+    "d-support": "støtte", "sup-h": "Hold meg våken", "sup-p": "DraftEasy lages om kveldene, mest på kaffe. Ethvert beløp er velkomment, og tusen takk!",
+    "to": "Til", "phone": "Telefon", "bank": "Bank", "open-vipps": "Åpne i Vipps", "open-sbp": "Åpne betalingssiden",
+    "alt-qr-vipps": "QR-kode for Vipps", "alt-qr-revolut": "QR-kode for Revolut", "alt-qr-sbp": "QR-kode for overføring via T-Bank eller Sberbank",
+    "tb-project": "Prosjekt", "tb-version": "Versjon", "tb-scale": "Målestokk", "tb-drawn": "Tegnet av",
+    "legal": "© 2026 Ilya Ershov. DraftEasy er gratisprogram og har ingen tilknytning til Autodesk, Inc. AutoCAD og DWG er varemerker for Autodesk. DWG-filer konverteres med ODA File Converter fra Open Design Alliance."
+  }
+};
+
+const nodes = [...document.querySelectorAll("[data-i18n]")];
+const altNodes = [...document.querySelectorAll("[data-i18n-alt]")];
+const EN = {}, EN_ALT = {};
+nodes.forEach(n => { EN[n.dataset.i18n] = n.textContent; });
+altNodes.forEach(n => { EN_ALT[n.dataset.i18nAlt] = n.alt; });
+
+const EN_WORDS = { added: "Added", notyet: "Not added yet" };
+function esc(t) { return String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+function renderChangelog(lang) {
+  const box = document.getElementById("changelog");
+  if (!box || typeof CHANGELOG === "undefined") return;
+  const word = k => (T[lang] || {})[k] ?? EN_WORDS[k];
+  const list = (e, k) => (e[k] && (e[k][lang] || e[k].en)) || [];
+  box.innerHTML = CHANGELOG.slice(0, 8).map(e => {
+    const add = list(e, "added"), later = list(e, "not_yet");
+    return `<article class="release"><h3>${esc(e.version)} <small>${esc(e.date)}</small></h3>`
+      + (add.length ? `<h4>${esc(word("added"))}</h4><ul>${add.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : "")
+      + (later.length ? `<h4 class="later">${esc(word("notyet"))}</h4><ul class="later">${later.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : "")
+      + `</article>`;
+  }).join("");
+}
+
+function setLang(lang) {
+  renderChangelog(lang);
+  const d = T[lang] || {};
+  nodes.forEach(n => { n.textContent = d[n.dataset.i18n] ?? EN[n.dataset.i18n]; });
+  altNodes.forEach(n => { n.alt = d[n.dataset.i18nAlt] ?? EN_ALT[n.dataset.i18nAlt]; });
+  document.documentElement.lang = lang === "no" ? "nb" : lang;
+  document.querySelectorAll(".langs button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+  try { localStorage.setItem("lang", lang); } catch (e) { /* storage is optional */ }
+}
+
+document.querySelectorAll(".ver").forEach(n => { n.textContent = VERSION; });
+document.getElementById("download").href = DOWNLOAD_URL;
+if (STRIPE_URL) { document.getElementById("stripe-link").href = STRIPE_URL; document.getElementById("card-stripe").hidden = false; }
+document.getElementById("feedback-link").href = "feedback/?product=draftEasy&version=" + encodeURIComponent(VERSION);
+document.querySelectorAll(".langs button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+
+let start = "en";
+try { start = localStorage.getItem("lang") || ""; } catch (e) { start = ""; }
+if (start && start !== "en" && !T[start]) start = "";
+if (!start) {
+  const nav = (navigator.language || "en").toLowerCase();
+  start = /^(nb|nn|no)/.test(nav) ? "no" : "en";
+}
+setLang(start);
+</script>
+</body>
+</html>
