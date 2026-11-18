@@ -17,7 +17,7 @@ drafteasy.no on GitHub Pages
      @    AAAA   2606:50c0:8003::153
      www  CNAME  sparepilot.github.io.
    DNS changes take from minutes up to a few hours.
-4. Installer: repository -> Releases -> Draft a new release, tag v1.27, attach DraftEasy_Setup_1.27.exe.
+4. Installer: repository -> Releases -> Draft a new release, tag v1.33, attach DraftEasy_Setup_1.33.exe.
    Put its link (right-click the file -> copy link) in DOWNLOAD_URL near the bottom of index.html.
 5. Stripe Payment Link (https://buy.stripe.com/...): put it in STRIPE_URL in index.html.
    Tally form id: put it in TALLY_FORM_ID in feedback/index.html.
