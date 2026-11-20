@@ -65,6 +65,8 @@
       <div class="cmd"><b>O</b><span data-i18n="c-o">Offset</span></div>
       <div class="cmd"><b>AL</b><span data-i18n="c-al">Align</span></div>
       <div class="cmd"><b>← ↑ → ↓</b><span data-i18n="c-nudge">Nudge the selection (Shift = 10×)</span></div>
+      <div class="cmd"><b>RC</b><span data-i18n="c-rc">Revision cloud + tag</span></div>
+      <div class="cmd"><b>LT</b><span data-i18n="c-lt">Linetypes, also your own</span></div>
       <div class="cmd"><b>TR</b><span data-i18n="c-tr">Trim</span></div>
       <div class="cmd"><b>EX</b><span data-i18n="c-ex">Extend</span></div>
       <div class="cmd"><b>F</b><span data-i18n="c-f">Fillet</span></div>
@@ -167,8 +169,8 @@
 <script src="changelog.js"></script>
 <script>
 // ---- settings: change these when a new version is published ----------------
-const VERSION = "1.38";
-const DOWNLOAD_URL = "https://github.com/sparepilot/drafteasy.no/releases/download/v1.38/DraftEasy_Setup_1.38.exe";   // GitHub release: tag v1.38 with this file attached
+const VERSION = "1.41";
+const DOWNLOAD_URL = "https://github.com/sparepilot/drafteasy.no/releases/download/v1.41/DraftEasy_Setup_1.41.exe";   // GitHub release: tag v1.41 with this file attached
 // Stripe Payment Link (https://buy.stripe.com/...). While empty, the card payment box is hidden.
 const STRIPE_URL = "https://buy.stripe.com/eVq3cv5sldar5Cngop4Rq00";
 
@@ -182,7 +184,7 @@ const T = {
     "d-commands": "kommandoer", "cmd-h": "Skriv som du gjør i AutoCAD",
     "cmd-p": "Kommandolinjen tar de vanlige forkortelsene, koordinater (x,y · @dx,dy · lengde<vinkel) og Enter for å gjenta. Snap, ortho (F8) og Shift for rette linjer virker som du venter.",
     "c-l": "Linje", "c-pl": "Polylinje", "c-c": "Sirkel", "c-rec": "Rektangel", "c-t": "Tekst", "c-m": "Flytt", "c-co": "Kopier",
-    "c-ro": "Roter", "c-sc": "Skaler", "c-mi": "Speil", "c-o": "Forskyv", "c-al": "Juster", "c-nudge": "Flytt utvalget (Shift = 10×)", "c-tr": "Trim", "c-ex": "Forleng", "c-f": "Avrund",
+    "c-ro": "Roter", "c-sc": "Skaler", "c-mi": "Speil", "c-o": "Forskyv", "c-al": "Juster", "c-nudge": "Flytt utvalget (Shift = 10×)", "c-rc": "Revisjonssky + merke", "c-lt": "Linjetyper, også egne", "c-tr": "Trim", "c-ex": "Forleng", "c-f": "Avrund",
     "c-x": "Spreng", "c-ma": "Kopier egenskaper", "c-dli": "Lineært mål", "c-dal": "Justert mål", "c-ddi": "Diameter",
     "c-di": "Avstand", "c-aa": "Areal", "c-mv": "Visningsvindu", "c-iat": "PDF-underlag", "c-e": "Slett",
     "d-features": "funksjoner", "feat-h": "Hva den gjør",
